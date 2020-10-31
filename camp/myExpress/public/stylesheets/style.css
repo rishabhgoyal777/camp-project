@@ -1,0 +1,18 @@
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+} */
+
+.thumbnail img{
+  width: 100%;
+}
+.thumbnail{
+  padding: 0;
+}
+#inlineMe{
+  display: inline;
+}

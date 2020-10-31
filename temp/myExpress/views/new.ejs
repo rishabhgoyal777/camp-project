@@ -1,0 +1,21 @@
+<%- include('header'); -%>
+<div class="ui main text container segment">
+    <div class="ui huge header">New Blog</div>
+    <form action="/blogs" method="POST" class="ui form">
+        <div class="field">
+            <label >Title</label>
+            <input type="text" placeholder="title" name="title">        
+        </div>
+        <div class="field">
+            <label >Image</label>
+            <input type="text" placeholder="image" name="image">      
+        </div>
+        <div class="field">
+            <label >Body</label>
+            <textarea name="body" id="" cols="30" rows="10"></textarea>
+        </div>
+    <input type="submit" class="ui blue inverted big button ">
+    </form>
+</div>
+
+<%- include('footer'); -%>

@@ -1,0 +1,24 @@
+<%- include('header'); -%>
+
+<!-- <form action="/campgrounds" method="POST">
+<input type="text" placeholder="name" name="name">
+<input type="text" placeholder="image url" name="image" >
+<button>submit!!!</button>
+</form> -->
+
+
+<form action="/campgrounds/<%=campid%>/comments/<%=comment._id%>?_method=PUT" method="POST">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Add comment</label>
+      <input type="text" class="form-control" id="exampleInputEmail1"  name="text" value="<%=comment.text%>">
+      
+    </div>
+   
+    <!-- initially here was another div for taking input of author of comment but comment can only be 
+    posted by a logged in person so take the author from the username of the logged in person     -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
+
+<%- include('footer'); -%>
